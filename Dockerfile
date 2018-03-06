@@ -3,7 +3,6 @@ LABEL authors="Vašek Dohnal <vaclav.dohnal@gmail.com>"
 
 RUN apt-get update && apt-get install -y --no-install-recommends software-properties-common && add-apt-repository ppa:jonathonf/python-3.6 -y
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    libopenblas-dev \
     python3.6 \
     python3.6-dev \
     curl \
