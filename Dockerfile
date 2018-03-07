@@ -1,6 +1,8 @@
 FROM ubuntu:16.04
 LABEL authors="Vašek Dohnal <vaclav.dohnal@gmail.com>"
 
+ARG DEBIAN_FRONTEND=noninteractive
+
 RUN apt-get update && apt-get install -y --no-install-recommends software-properties-common && add-apt-repository ppa:deadsnakes/ppa -y
 RUN apt-get update && apt-get install -y --no-install-recommends \
     python3.6 \
